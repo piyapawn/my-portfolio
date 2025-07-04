@@ -15,12 +15,7 @@ const Menu: MenuType[] = [
         menuName: "My Profile",
         menuCode: "PROFILE",
         path: "/profile"
-    },
-    {
-        menuName: "Contact",
-        menuCode: "CONTACT",
-        path: "/contact"
-    },
+    }
 ];
 
 export default Menu;
