@@ -22,7 +22,7 @@ export default function PortfolioDetails({ projectData, setSelectedProject, sele
           value={selectedProject}
           onChange={(event) => setSelectedProject(event.target.value)}
         >
-          {ProjectInfos?.map((projectData: ProjectType) => { return (<MenuItem value={projectData?.id}>{projectData?.projectName}</MenuItem>) })}
+          {ProjectInfos?.map((projectData: ProjectType) => { return (<MenuItem value={projectData?.id} key={projectData?.id}>{projectData?.projectName}</MenuItem>) })}
         </Select>
       </div>
       <div className="max-w-[744px] min-w-[350px] h-fit m-auto p-8">
