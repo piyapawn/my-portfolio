@@ -1,7 +1,10 @@
 'use client'
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function MiniProfile() {
+  const router = useRouter();
+
   return (
     <div id="about" className="w-full h-[420px] m-auto bg-blue-500/50 py-4">
       <div className="m-auto max-w-[744px] min-w-[350px] size-full bg-white p-4 rounded-lg shadow-xl flex flex-col gap-3">
@@ -13,7 +16,10 @@ export default function MiniProfile() {
           supportive and collaborative team environment.</p>
 
         <div className="w-full flex justify-end">
-          <button className="w-[100px] h-[40px] p-2 bg-blue-300/50 hover:bg-blue-500/50 rounded-xl cursor-pointer text-[#344054]">
+          <button
+            type="button"
+            onClick={() => router.push('/profile')}
+            className="w-[100px] h-[40px] p-2 bg-blue-300/50 hover:bg-blue-500/50 rounded-xl cursor-pointer text-[#344054]">
             Read more
           </button>
         </div>

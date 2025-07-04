@@ -10,7 +10,6 @@ import { usePathname, useRouter } from "next/navigation";
 export default function MenuBar() {
   const router = useRouter();
   const pathname = usePathname();
-  console.log('popo', pathname);
 
   function renderMenu(selectedMenu: MenuType) {
     return (

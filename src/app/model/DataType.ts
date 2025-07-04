@@ -10,7 +10,7 @@ export interface ProjectType {
     id: string;
     projectName: string;
     vidSrc: string;
-    imgSrc: string;
+    imgSrc?: string;
     details: string;
 }
 

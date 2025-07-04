@@ -31,14 +31,16 @@ export default function PortfolioDetails({ projectData, setSelectedProject, sele
         </video>
       </div>
 
-      <div className="max-w-[744px] min-w-[350px] h-fit m-auto p-8">
-        <Image
-          src={projectData?.imgSrc}
-          width={680}
-          height={200}
-          alt={projectData?.projectName}
-        />
-      </div>
+      {projectData?.imgSrc && (
+        <div className="max-w-[744px] min-w-[350px] h-fit m-auto p-8">
+          <Image
+            src={projectData?.imgSrc}
+            width={680}
+            height={200}
+            alt={projectData?.projectName}
+          />
+        </div>
+      )}
 
       <p className="text-[#344054]" dangerouslySetInnerHTML={{ __html: projectData?.details }} />
     </main>
