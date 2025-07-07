@@ -25,11 +25,14 @@ export default function PortfolioDetails({ projectData, setSelectedProject, sele
           {ProjectInfos?.map((projectData: ProjectType) => { return (<MenuItem value={projectData?.id} key={projectData?.id}>{projectData?.projectName}</MenuItem>) })}
         </Select>
       </div>
-      <div className="max-w-[744px] min-w-[350px] h-fit m-auto p-8">
-        <video width="680" height="200" controls preload="none">
-          <source src={projectData?.vidSrc} type="video/mp4" />
-        </video>
-      </div>
+
+      {projectData?.vidSrc && (
+        <div className="max-w-[744px] min-w-[350px] h-fit m-auto p-8">
+          <video width="680" height="200" controls preload="none">
+            <source src={projectData?.vidSrc} type="video/mp4" />
+          </video>
+        </div>
+      )}
 
       {projectData?.imgSrc && (
         <div className="max-w-[744px] min-w-[350px] h-fit m-auto p-8">

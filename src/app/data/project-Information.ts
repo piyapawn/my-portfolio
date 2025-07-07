@@ -17,14 +17,14 @@ const ProjectInfos: ProjectType[] = [
     {
         id: "WWWB",
         projectName: "World wide Weeb",
-        vidSrc: "/video/world-wide-web.mp4",
+        // vidSrc: "/video/world-wide-web.mp4",
         imgSrc: "/image/wwweb.jpg",
         details: "# Internet Awareness website<br/>Only web developer, not the design part<br/>University project<br/>Tech: HTML, CSS, Javascript<br/><br/>## Features<br/>- Interactive mini game<br/><br/>## What I would Improve<br/>- Responsive design<br/>- Up-to-date tech stack<br/>- Clean and readable code<br/>- Using better data storing technic<br/>"
     },
     {
         id: "INTJ",
         projectName: "Into the jungle",
-        vidSrc: "/video/animals-gone.mp4",
+        // vidSrc: "/video/animals-gone.mp4",
         imgSrc: "/image/jngle.jpg",
         details: "# Animals extinction awareness website<br/>Only web developer, not the design part<br/>University project<br/>Tech: HTML, CSS, Javascript<br/><br/>## Features<br/>- Interactive mini game<br/><br/>## What I would Improve<br/>- Responsive design<br/>- Up-to-date tech stack<br/>- Clean and readable code<br/>"
     },

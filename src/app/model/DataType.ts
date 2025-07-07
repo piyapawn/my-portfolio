@@ -9,7 +9,7 @@ export interface MenuType {
 export interface ProjectType {
     id: string;
     projectName: string;
-    vidSrc: string;
+    vidSrc?: string;
     imgSrc?: string;
     details: string;
 }
